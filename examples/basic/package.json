@@ -2,7 +2,7 @@
   "name": "partner-signer-example-basic",
   "version": "0.0.0",
   "private": true,
-  "description": "Reference consumer of @nexum-io/partner-signer: the app reads its env, the SDK only signs",
+  "description": "Reference consumer of @nexum-io/partner-signer-sdk: the app reads its env, the SDK only signs",
   "type": "module",
   "engines": {
     "node": ">=20.6"
@@ -13,7 +13,7 @@
     "start": "node --env-file=.env main.mjs"
   },
   "dependencies": {
-    "@nexum-io/partner-signer": "file:../..",
-    "viem": "^2.56.5"
+    "viem": "^2.56.5",
+    "@nexum-io/partner-signer-sdk": "file:../.."
   }
 }

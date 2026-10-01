@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-describe('@nexum-io/partner-signer entry', () => {
+describe('@nexum-io/partner-signer-sdk entry', () => {
   it('exposes exactly the v1 runtime surface: createSigner + InvalidPrivateKeyError', async () => {
     const mod = await import('../src/index.js');
 

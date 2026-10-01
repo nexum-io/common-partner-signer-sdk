@@ -1,6 +1,6 @@
 // Reference consumer: the APPLICATION owns the key and reads its own environment.
 // The SDK never touches process.env — it only receives `privateKey` and signs.
-import { createSigner, InvalidPrivateKeyError } from '@nexum-io/partner-signer';
+import { createSigner, InvalidPrivateKeyError } from '@nexum-io/partner-signer-sdk';
 import { recoverMessageAddress, recoverTypedDataAddress } from 'viem';
 
 // Any variable name you like — it is your application's contract, not the SDK's.
