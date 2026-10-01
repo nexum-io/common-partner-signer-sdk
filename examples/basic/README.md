@@ -1,6 +1,6 @@
 # examples/basic — env outside, `createSigner` inside
 
-The smallest honest consumer of `@nexum-io/partner-signer`:
+The smallest honest consumer of `@nexum-io/partner-signer-sdk`:
 
 1. the **application** reads `PARTNER_SIGNER_PRIVATE_KEY` from its environment (the name is yours to choose);
 2. passes it to `createSigner` — the SDK never reads `process.env`;
@@ -27,4 +27,4 @@ message recover: OK
 
 Exit code is `1` when the variable is missing, the key is malformed (`InvalidPrivateKeyError`, no key material echoed) or a recover check fails.
 
-Requires Node ≥ 20.6 (`--env-file`). In your own service use `github:nexum-io/common-partner-signer#vX` instead of the `file:` link — then a plain `npm install` is all you need.
+Requires Node ≥ 20.6 (`--env-file`). In your own service use `github:nexum-io/common-partner-signer-sdk#vX` instead of the `file:` link — then a plain `npm install` is all you need.

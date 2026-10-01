@@ -1,7 +1,7 @@
 // stdio entry: the MCP HOST process environment provides the key; the SDK itself never reads env.
 // stdout is the protocol channel — never console.log here. Diagnostics, if any, go to stderr.
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
-import { createSigner, type PartnerSigner } from '@nexum-io/partner-signer';
+import { createSigner, type PartnerSigner } from '@nexum-io/partner-signer-sdk';
 import type { Hex } from 'viem';
 
 import { createPartnerSignerMcpServer } from './server.js';

@@ -2,7 +2,7 @@ import { createRequire } from 'node:module';
 
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import type { CallToolResult } from '@modelcontextprotocol/sdk/types.js';
-import type { PartnerSigner } from '@nexum-io/partner-signer';
+import type { PartnerSigner } from '@nexum-io/partner-signer-sdk';
 import type { Hex } from 'viem';
 import { z } from 'zod';
 
@@ -46,7 +46,7 @@ const signatureOutput = {
 };
 
 /**
- * MCP server exposing the v1 surface of @nexum-io/partner-signer 1:1 as tools.
+ * MCP server exposing the v1 surface of @nexum-io/partner-signer-sdk 1:1 as tools.
  * Namespace `signer_*` — deliberately disjoint from common-wc-sign-tester's `wallet_*`.
  * Key material never enters tool results; the key stays inside the signer's closure.
  */

@@ -1,10 +1,19 @@
 # Changelog
 
-All notable changes to `@nexum-io/partner-signer`. Versions are git tags (`vX.Y.Z`); consume by tag.
+All notable changes to `@nexum-io/partner-signer-sdk`. Versions are git tags (`vX.Y.Z`); consume by tag.
+
+## 0.2.0
+
+Breaking identity rename only — signing contract v1 unchanged.
+
+- npm package: `@nexum-io/partner-signer` → `@nexum-io/partner-signer-sdk`
+- GitHub repo: `nexum-io/common-partner-signer` → `nexum-io/common-partner-signer-sdk`
+- Install: `npm install github:nexum-io/common-partner-signer-sdk#v0.2.0`
+- No API changes to `createSigner` / MCP `signer_*` tools
 
 ## 0.1.0
 
-First public release of the v1 contract.
+First public release of the v1 contract (published under `@nexum-io/partner-signer` / `common-partner-signer`).
 
 - `createSigner({ privateKey })` over viem local accounts — `getAddress()`, `signTypedData(typedData)`, `signMessage(message)`.
 - `InvalidPrivateKeyError` for malformed keys; the error never carries the value and has no `cause`.

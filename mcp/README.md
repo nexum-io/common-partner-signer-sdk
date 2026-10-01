@@ -1,6 +1,6 @@
 # partner-signer MCP (stdio)
 
-MCP server for agents (Cursor, Claude Code, …) that exposes `@nexum-io/partner-signer` 1:1 as tools. It is a **local partner EOA from a private key** — not WalletConnect, not a human wallet, not `common-wc-sign-tester`.
+MCP server for agents (Cursor, Claude Code, …) that exposes `@nexum-io/partner-signer-sdk` 1:1 as tools. It is a **local partner EOA from a private key** — not WalletConnect, not a human wallet, not `common-wc-sign-tester`.
 
 | Tool | Input | Output |
 |------|-------|--------|
@@ -41,7 +41,7 @@ Copy [`mcp.json.example`](mcp.json.example) into your project's `.cursor/mcp.jso
 {
   "mcpServers": {
     "partner-signer": {
-      "command": "/ABSOLUTE/PATH/TO/common-partner-signer/mcp/bin/partner-signer-mcp.sh",
+      "command": "/ABSOLUTE/PATH/TO/common-partner-signer-sdk/mcp/bin/partner-signer-mcp.sh",
       "args": [],
       "env": { "PATH": "/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin" }
     }

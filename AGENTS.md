@@ -1,6 +1,6 @@
-# AGENTS.md — common-partner-signer
+# AGENTS.md — common-partner-signer-sdk
 
-`@nexum-io/partner-signer` — thin Node.js SDK for a **partner backend** to sign EIP-712 typed data and messages with **its own** wallet.
+`@nexum-io/partner-signer-sdk` — thin Node.js SDK for a **partner backend** to sign EIP-712 typed data and messages with **its own** wallet.
 
 ## Ownership
 
@@ -54,15 +54,15 @@ npm run build        # emit dist/
 
 ## Release
 
-Consumers install by git tag: `npm i github:nexum-io/common-partner-signer#vX.Y.Z` (npm runs `prepare` → `dist/`). To cut a version, on the merged `develop` commit:
+Consumers install by git tag: `npm i github:nexum-io/common-partner-signer-sdk#vX.Y.Z` (npm runs `prepare` → `dist/`). To cut a version, on the merged `develop` commit:
 
 ```bash
 # 1. version in package.json AND mcp/package.json (the MCP reports its own version) + CHANGELOG.md entry land through a normal PR;
 #    re-run `npm run setup` so the example/mcp lockfiles pick up the new link version
 # 2. tag the merge commit and push the tag
-git tag -a v0.1.0 -m "v0.1.0" <develop-merge-commit>
-git push origin v0.1.0
-# 3. smoke: npm i github:nexum-io/common-partner-signer#v0.1.0 in an empty Node project
+git tag -a v0.2.0 -m "v0.2.0" <develop-merge-commit>
+git push origin v0.2.0
+# 3. smoke: npm i github:nexum-io/common-partner-signer-sdk#v0.2.0 in an empty Node project
 ```
 
 Never move a published tag; publish a new version instead.

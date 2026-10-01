@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "partner-signer": {
-      "command": "/ABSOLUTE/PATH/TO/common-partner-signer/mcp/bin/partner-signer-mcp.sh",
+      "command": "/ABSOLUTE/PATH/TO/common-partner-signer-sdk/mcp/bin/partner-signer-mcp.sh",
       "args": [],
       "env": {
         "PATH": "/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin"
