@@ -12,3 +12,4 @@ dist/
 .superpowers/
 .ai-sdd/
 .claude/settings.local.json
+.worktrees/
