@@ -34,8 +34,9 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
     "test": "vitest run",
-    "ci:check": "npm run typecheck && npm run build && npm run test && npm run ci:check --prefix mcp",
+    "ci:check": "npm run typecheck && npm run lint && npm run build && npm run test && npm run ci:check --prefix mcp",
     "setup": "npm ci && npm ci --prefix examples/basic && npm ci --prefix mcp && npm run build --prefix mcp",
     "prepare": "npm run build"
   },
@@ -43,8 +44,11 @@
     "viem": "^2.56.5"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^20.19.43",
+    "eslint": "^10.13.0",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.2",
     "vitest": "^4.1.12"
   }
 }

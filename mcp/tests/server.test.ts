@@ -251,7 +251,7 @@ describe('partner-signer MCP server', () => {
         domain: { ...domainBase, chainId: 137 },
         types,
         primaryType: 'Order',
-        message: { ...jsonMessage, amount: 9007199254740993 },
+        message: { ...jsonMessage, amount: 2 ** 53 + 1 },
       });
 
       expect(rejected.isError).toBe(true);

@@ -28,7 +28,7 @@ function contractV1(signer: PartnerSigner, options: CreateSignerOptions): void {
   signer.signTypedData({ ...typedData, primaryType: 'Pong' });
 
   // @ts-expect-error — the v1 surface is exactly three methods
-  signer.signTransaction;
+  void signer.signTransaction;
 }
 
 describe('v1 contract types', () => {
