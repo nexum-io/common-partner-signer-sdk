@@ -141,7 +141,7 @@ Semantic versioning through git tags (`vX.Y.Z`). Consume a tag, not a branch, in
 ```bash
 nvm use            # Node 22 for development; the package supports Node >= 20
 npm run setup      # npm ci for the package (prepare builds dist/), examples/basic and mcp (SDK linked via file:), then builds mcp/dist
-npm run ci:check   # SDK: typecheck + build + test (incl. the example smoke); then mcp: typecheck + build + test (incl. stdio through the launcher)
+npm run ci:check   # SDK: typecheck + lint + build + test (incl. the example smoke); then mcp: typecheck + build + test (incl. stdio through the launcher)
 ```
 
 Run `npm run setup` from the repository root before any `npm` command inside `examples/basic` or `mcp`.

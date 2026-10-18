@@ -73,8 +73,8 @@ describe('typedDataFromJson — JSON payload → viem typed data', () => {
     });
 
     it.each([
-      ['2^53', 9007199254740992],
-      ['2^53 + 1 (already rounded by JSON)', 9007199254740993],
+      ['2^53', 2 ** 53],
+      ['2^53 + 1 (already rounded by JSON)', 2 ** 53 + 1],
       ['a huge float', 1e21],
     ])('rejects an unsafe JSON number (%s) and points at decimal/hex strings', (_label, amount) => {
       const input = { ...TYPED_DATA_JSON, message: { ...TYPED_DATA_JSON.message, amount } };
